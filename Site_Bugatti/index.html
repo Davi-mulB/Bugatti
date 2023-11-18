@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Bugatti</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="icon" href="bugatti_logo.png" type="image/x-icon">
+  <script src='main.js'></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a>Modelos</a>
+          <ul>
+            <li>
+              <a href="#chiron">Chiron</a>
+            </li>
+            <li>
+              <a href="#eb110">EB110</a>
+            </li>
+            <li>
+              <a href="#divo">Divo</a>
+            </li>
+            <li>
+              <a href="#bolide">Bolide</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#quiz">Quiz</a>
+        </li>
+      </ul>
+      <img class="logo" src="bugatti_logo.png">
+    </nav>
+  </header>
+  <main>
+    <div class="chiron">
+        <img src="chiron.jpeg">
+        <div></div>
+        <div></div>
+        <div>BUGATTI</div>
+        <div>A Bugatti é uma marca francesa fabricante de carros superesportivos, responsável por modelos icônicos e desejados por qualquer entusiasta.</div>
+    </div>
+    <div id="chiron" class="chironnormal">
+        <img src="chironnormal.jpeg">
+        <div></div>
+        <div></div>
+        <div>CHIRON</div>
+        <div>A Chiron é consideravelmente o modelo mais conhecido da era moderna. Possui várias edições especiais que tornam o modelo ainda mais especial.</div>
+    </div>
+    <div class="cimgs">Imagens: Chiron
+        <div class="galeriachi">
+            <div>300+</div>
+            <button class="butchi">
+                <img src="chiron300.png">
+            </button>
+            <div class="modal">
+              <div class="window">
+                  <div class="content">
+                      <div class="imagem">
+                          <h1>Bugatti Super Sport 300+</h1>
+                          <img class="chi300" src="chiron300.png">
+                      </div>
+                      <div class="info">
+                        <h2>Nesta imagem podemos observar o modelo especial mais famoso da Chiron, a Super Sport 300+, o primeiro carro de rua a bater a velocidade de 300 milhas por hora (482km/h).</h2> 
+                        <div class="fechar">
+                            <button class="close">fechar</button>
+                        </div>
+                      </div>
+                  </div>    
+              </div>
+            </div>
+            <script>
+                const modal = document.querySelector('.modal')
+                const close = modal.querySelector('.close')
+                const open = document.querySelector('button')
+            
+                open.addEventListener('click', () => {
+                  modal.classList.add("opened")
+                })
+            
+                close.addEventListener('click', () => {
+                  modal.classList.remove("opened")
+                })
+            
+                modal.addEventListener('click', (evt) => {
+                  if (evt.target.classList.contains("modal")) {
+                    modal.classList.remove("opened")
+                  }
+                })
+              </script>
+              <button class="butchi2">
+                <img src="chiron.png">
+            </button>
+            <div class="modal2">
+              <div class="window2">
+                  <div class="content2">
+                      <div class="imagem2">
+                          <h1>Bugatti Super Sport 300+</h1>
+                          <img class="chi3002" src="chiron.png">
+                      </div>
+                      <div class="info2">
+                        <h2>A Bugatti Chiron Super Sport 300+ demorou 2 anos para ser feita e se limitou a apenas 30 unidades. Nessa imagem podemos vê-la na pista de testes Ehra-Lessien onde bateu seu recorde por ação da incrível engenharia incluída na sua construção.</h2> 
+                        <div class="fechar2">
+                            <button class="close2">fechar</button>
+                        </div>
+                      </div>
+                  </div>    
+              </div>
+            </div>
+            <script>
+                const modal2 = document.querySelector('.modal2')
+                const close2 = modal2.querySelector('.close2')
+                const open2 = document.querySelector('.butchi2')
+            
+                open2.addEventListener('click', () => {
+                  modal2.classList.add("opened2")
+                })
+            
+                close2.addEventListener('click', () => {
+                  modal2.classList.remove("opened2")
+                })
+            
+                modal2.addEventListener('click', (evt2) => {
+                  if (evt2.target.classList.contains("modal2")) {
+                    modal2.classList.remove("opened2")
+                  }
+                })
+              </script>
+                <div class="prof">Profilée</div>
+                <img class="prof1" src="ProfileeFS.jpg">
+                <img src="profdrive.jpg" class="prof2">
+                <div class="w16">Motor W16</div>
+                <img src="EngineCover.jpg" class="cover">
+                <img src="EngineSide.jpg" class="cover2">
+                <img src="EngTran.jpg" class="cover3">
+                <div class="ss">Super Sport</div>
+                <img src="SSdrift.jpg" class="ssd">
+                <div class="ge">Golden Era</div>
+                <img src="GEchiUp.jpg" class="geup">
+                <img src="GEchiSide.jpg" class="ges">
+        </div>
+    </div>
+    <div id="eb110" class="eb110">
+      <img src="EBfront.jpg">
+      <div></div>
+      <div></div>
+      <div>EB110</div>
+      <div>EB110, um dos clássicos da marca. Fabricada em 1991, exatamente 110 anos após o nasciemnto do criador da marca, Ettore Bugatti.</div>
+    </div>
+    <div class="ebt">Imagens: EB110</div>
+    <div class="ebimgs">
+      <img src="110a.jpg">
+      <img src="110b.jpg">
+      <img src="110c.jpg">
+      <img src="110d.jpg">
+      <img src="110e.jpg">
+      <img src="110f.jpg">
+      <img src="110g.jpeg">
+      <img src="110h.jpg">
+      <img src="110i.jpg">
+      <img src="110j.jpg">
+    </div>
+    <div id="divo" class="divo">
+      <img src="divo.jpeg">
+      <div></div>
+      <div></div>
+      <div>Divo</div>
+      <div>A Bugatti Divo é um dos grandes supercarros da era moderna produzidos pela marca. Recebeu seu nome em homenagem ao piloto francês Albert Divo e se limitou a apenas 40 unidades.</div>
+    </div>
+    <div class="divot">Imagens: Divo</div>
+    <div class="divoimgs">
+      <img src="divo2.jpg">
+      <img src="divo3.jpg">
+      <img src="divo4.jpg">
+      <img src="divo5.jpg">
+      <img src="divo6.jpg">
+      <img src="divo7.jpg">
+      <img src="divo8.jpg">
+      <img src="divo9.jpg">
+      <img src="divo10.jpg">
+      <img src="divo11.jpg">
+      <img src="divo12.jpg">
+      <img src="divo13.jpg">
+    </div>
+    <div id="bolide" class="bolide">
+      <img src="bolide.jpeg">
+      <div></div>
+      <div></div>
+      <div>Bolide</div>
+      <div>A Bolide é um supercarro de pista muito potente, tendo uma relação de peso-potência de 0,91 kg/kW. Foi anunciado em 2020, já chamando atenção por seu design incrível como nunca visto antes. O nome Bolide vem de <em>le bolide</em>, que significa <em>carro de corrida</em></div>
+    </div>
+    <div class="bolidet">Imagens: Bolide</div>
+    <div class="bolideimgs">
+      <img src="bolide2.jpg">
+      <img src="bolide3.jpg">
+      <img src="bolide4.jpg">
+      <img src="bolide5.jpg">
+      <img src="bolide7.jpg">
+      <img src="bolide9.jpg">
+      <img src="bolide10.jpg">
+      <img src="bolide11.jpg">
+      <img src="bolide12.jpg">
+      <img src="bolide13.jpg">
+    </div>
+    <div class="quiz">
+      <img src="logoquiz.png">
+      <a id="quiz" href="/Site_web/index.html">QUIZ</a>
+      <img src="logoquiz.png">
+    </div>
+  </main>
+</body>
+</html>
